@@ -20,7 +20,6 @@ import retrofit2.http.POST;
 import retrofit2.http.QueryMap;
 
 /**
- * Created by liukang on 2018/5/17 10:43.
  * 以下提供的方法基本涵盖常用的一些请求类型
  * 仅供测试参考
  * 具体使用时根据url规则进行重新梳理
@@ -36,12 +35,12 @@ public interface RetrofitService {
 //    Observable<ResponseBody> sendRequest2(@Path("page") String s);
 //
 //    //get 类型的拼接 （?name=sdsd&page=1）
-//    @Headers("apikey:81bf9da930c7f9825a3c3383f1d8d766")
+//    @Headers("apikey:xxx")
 //    @GET("word/word")
 //    Observable<ResponseBody> sendRequest3(@Query("num") String num, @Query("page") String page);
 //
 //    //get 类型的拼接(集合)
-//    @Headers("apikey:81bf9da930c7f9825a3c3383f1d8d766")
+//    @Headers("apikey:xxx")
 //    @GET("word/word")
 //    Observable<ResponseBody> sendRequest4(@QueryMap HashMap<String, Object> hashMap);
 //
@@ -59,7 +58,7 @@ public interface RetrofitService {
 //     * 表明是一个表单格式的请求（Content-Type:application/x-www-form-urlencoded）
 //     * <code>Field("username")</code> 表示将后面的 <code>String name</code> 中name的取值作为 username 的值
 //     */
-//    @POST("osg/ikl/123")
+//    @POST("osg/xx/123")
 //    @FormUrlEncoded
 //    Observable<HttpResponse> testFormUrlEncoded1(@Field("username") String name, @Field("age") String age);
 //
