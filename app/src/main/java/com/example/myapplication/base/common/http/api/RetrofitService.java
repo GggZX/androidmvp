@@ -100,81 +100,81 @@ public interface RetrofitService {
     //密码登陆
     @FormUrlEncoded
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxx=",
             "Tenant-Id:000000"
     })
-    @POST("zygj-auth/oauth/token")
+    @POST("x-auth/oauth/token")
     Observable<LoginResponse> loginbyPsw(@FieldMap Map<String, Object> map);
 
     //密码登陆
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxxxx=",
             "Tenant-Id:000000"
     })
-    @POST("zygj-app/appMenu/moduleByRoleId?/")
+    @POST("x-app/appMenu/moduleByRoleId?/")
     Observable<HomeMenuBean> getRoleDimens(@Header("Blade-Auth") String Blade, @QueryMap Map<String, Object> map);
 
     @FormUrlEncoded
-    @POST("zygj-app/overview/getOneClassName")
+    @POST("x-app/overview/getOneClassName")
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxxxxx=",
             "Tenant-Id:000000"
     })
     Observable<ClassOneResponse> getOneClassName(@Header("Blade-Auth") String Blade, @FieldMap Map<String, Object> map);
 
 
     @FormUrlEncoded
-    @POST("zygj-app/overview/getOverviewInfoList")
+    @POST("x-app/overview/getOverviewInfoList")
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxx=",
             "Tenant-Id:000000"
     })
     Observable<DailyViewResponse> getOverviewInfoList(@Header("Blade-Auth") String Blade, @FieldMap Map<String, Object> map);
 
 
     @FormUrlEncoded
-    @POST("zygj-app/overview/getOverviewInfoList")
+    @POST("x-app/overview/getOverviewInfoList")
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxxxx=",
             "Tenant-Id:000000"
     })
     Observable<BusinessResponse> getBunissInfoList(@Header("Blade-Auth") String Blade, @FieldMap Map<String, Object> map);
 
 
     @FormUrlEncoded
-    @POST("zygj-app/overview/getOverviewInfoList")
+    @POST("x-app/overview/getOverviewInfoList")
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxxxxxx=",
             "Tenant-Id:000000"
     })
     Observable<ZongheResponse> getZongheInfoList(@Header("Blade-Auth") String Blade, @FieldMap Map<String, Object> map);
 //
 
-    @POST("zygj-app/care/carePage/")
+    @POST("x-app/care/carePage/")
     Observable<MyFollowResponse> getBottomMyFollow(@Header("Blade-Auth") String Blade, @QueryMap Map<String, Object> map);
 
     */
 /*
     * //用户取消关注
-http://localhost/zygj-app/care/removeCare
-{"id":"1333688439204974593"}*//*
+http://localhost/x-x/x/removeCare
+{"id":"x"}*//*
 
-    @POST("zygj-app/care/removeCare/")
+    @POST("x-app/care/removeCare/")
     Observable<UnFollowBean> unFollow(@Header("Blade-Auth") String Blade, @QueryMap Map<String, Object> map, @Body  RequestBody requestBody);
 
-    @POST("zygj-app/banner/info/")
+    @POST("x-app/banner/info/")
     Observable<BannerBean> getbanner(@Header("Blade-Auth") String Blade, @QueryMap Map<String, Object> map);
 
-    @POST("zygj-app/secondPack/getCrcAndApksha")
+    @POST("x-app/secondPack/getCrcAndApksha")
     @Headers({
-            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+            "Authorization:Basic xxxxxxxxxxxx=",
             "Tenant-Id:000000"
     })
     Observable<SplashBean> getcheckcode(@Body  RequestBody requestBody);
 */
-@POST("zygj-app/secondPack/getCrcAndApksha")
+@POST("x-app/x/getCrcAndApksha")
 @Headers({
-        "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+        "Authorization:Basic xxx=",
         "Tenant-Id:000000"
 })
 Observable<SplashBean> getcheckcode(@Body  RequestBody requestBody);
@@ -182,10 +182,10 @@ Observable<SplashBean> getcheckcode(@Body  RequestBody requestBody);
     //密码登陆
 //    @FormUrlEncoded
 //    @Headers({
-//            "Authorization:Basic enlnakFwcDp6eWdqQXBwX1p5Z2okJDg2My4=",
+//            "Authorization:Basic xxxxxxxxxxxxx=",
 //            "Tenant-Id:000000"
 //    })
-//    @POST("zygj-auth/oauth/token")
+//    @POST("x-auth/oauth/token")
 //    Observable<LoginResponse> loginbyPsw(@FieldMap Map<String, Object> map);
 
     @POST("/auth/logins")
