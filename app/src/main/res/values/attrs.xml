@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CirclePercentView">
+        <attr name="maxValue" format="integer" />
+        <attr name="value" format="integer" />
+        <attr name="backgroudColor" format="color|reference" />
+        <attr name="frontColor" format="color|reference" />
+        <attr name="textFont" format="dimension|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textMargin" format="dimension|reference" />
+        <attr name="borderWidth" format="dimension|reference" />
+        <attr name="descripe" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PercentageRing">
+        <attr name="radiuspt" format="integer"/>
+        <attr name="circleBackground" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="innerringColor" format="color"/>
+        <attr name="textColorx" format = "color"/>
+        <attr name="outringfull" format = "color"/>
+        <attr name="opposideTextColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="GestureLock">
+        <attr name="line_width" format="dimension"/>
+        <attr name="line_normal_color" format="color"/>
+        <attr name="line_error_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="radarCharts">
+        <attr name="itemTextColor" format="color" />
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="dataBackColor" format="color" />
+        <attr name="polygonNumber" format="integer" />
+        <attr name="classNumber" format="integer" />
+        <attr name="showNumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="barCharts">
+        <attr name="borderColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="title" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextColor" format="color" />
+
+        <attr name="descriptionTextSize" format="dimension" />
+        <attr name="descriptionTextColor" format="color" />
+
+        <attr name="dataTextSize" format="dimension" />
+        <attr name="dataTextColor" format="color" />
+
+        <attr name="leftTextSpace" format="dimension" />
+        <attr name="topTextSpace" format="dimension" />
+        <attr name="bottomTextSpace" format="dimension" />
+        <attr name="barShowNumber" format="integer" />
+        <attr name="isClickAnimation" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="pieCharts">
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="pieLineColor" format="color" />
+        <attr name="backColor" format="color" />
+    </declare-styleable>
+</resources>

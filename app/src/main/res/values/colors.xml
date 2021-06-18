@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#f00</color>
+    <color name="green">#0DBC90</color>
+    <color name="grayy">#999999</color>
+    <color name="gray_one">#E6EFED</color>
+    <color name="status_color">#4DABF8</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="primgreen">#0DBC90</color>
+    <color name="circleyellow">#ffFE9860</color>
+    <color name="progressColor">#E7453C</color>
+    <color name="graydivider">#e5e5e5</color>
+    <color name="grayprogress">#999999</color>
+    <color name="totalviewred">#E7453C</color>
+    <color name="home_rb_notchecked">#BDBDBD</color>
+    <color name="home_rb_checked">#0DBC90</color>
+
+    <color name="line">#EDEDED</color>
+    <color name="post_detail_content">#999999</color>
+
+    <color name="mplp_inner_hitcolor">#33A665</color>
+    <color name="mplp_outer_hitcolor">#AFDDC3</color>
+    <color name="oppopsitering_color">#FF5F5F</color>
+
+    <color name="yingye_level2bg">#F3F3F3</color>
+    <color name="new_divider_darker">#e5e5e5</color>
+    <color name="test">#50AEAEAE</color>
+    <color name="test2">#40F3F5F9</color>
+    <color name="ad">#AEAEAE</color>
+    <color name="test3">#cccccc</color>
+</resources>

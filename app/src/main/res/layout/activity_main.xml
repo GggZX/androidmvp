@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <com.example.myapplication.view.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"/>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/home_tab_host"
+            android:layout_weight="1"></FrameLayout>
+
+
+        <!--中间为一条分割线-->
+        <View
+            android:background="#BDBDBD"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <!--最下边为RadioGroup-->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="60dp">
+
+            <!--第一个RadioButton-->
+            <RadioButton
+                android:id="@+id/button_home"
+                android:text="首页"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50" />
+            <!--android:background="@drawable/radiobutton_bg_selector"-->
+            <!--第二个RadioButton-->
+            <RadioButton
+                android:id="@+id/button_my"
+                android:text="我的"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50" />
+        </RadioGroup>
+</LinearLayout>

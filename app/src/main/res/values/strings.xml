@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mydemo</string>
+    <string name="myfollow"><b>我的关注</b></string>
+    <string name="crc">3019758662</string>
+    <bool name="isdebu">true</bool>
+    <string name="test">testa</string>
+</resources>

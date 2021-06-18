@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_270"
+           >
+
+            <ImageView
+                android:id="@+id/simple"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_75"
+                android:layout_width="@dimen/dp_149"
+                android:layout_height="@dimen/dp_50"
+                />
+        </RelativeLayout>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_24"
+            >
+
+            <EditText
+                android:id="@+id/edaccount"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@color/black"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@"
+                android:hint="账号" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginRight="24dp"
+            >
+
+            <EditText
+                android:id="@+id/edpsw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@color/black"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:hint="密码" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="登录" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_0"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/tvAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="点击按钮表示同意《隐私协议》"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/sp_14"
+        android:paddingBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_7"/>
+</RelativeLayout>
+
+</LinearLayout>

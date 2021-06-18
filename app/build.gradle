@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+
+        abortOnError false
+
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //ButterKnife
+    //引入ButterKnife
+    implementation "com.jakewharton:butterknife:10.0.0"
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.0.0"
+//
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Hawk
+    api 'com.orhanobut:hawk:2.0.1'
+
+    //okhttp3 和 retrofit2
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    api 'com.squareup.okio:okio:1.14.1'
+
+    //
+    //rxjava2
+    api 'io.reactivex.rxjava2:rxjava:2.0.1'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //gson
+    api 'com.google.code.gson:gson:2.8.4'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    //关联生命周期
+
+    implementation 'com.trello.rxlifecycle4:rxlifecycle:4.0.2'
+    implementation 'com.trello.rxlifecycle4:rxlifecycle-components:4.0.2'
+//    api 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+//    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+
+    //okhttp3 拦截器
+    api 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    api 'com.alibaba:fastjson:1.1.46.android'
+
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+//    implementation 'com.github.xiaohaibin:XBanner:1.7.0'
+//    implementation 'com.github.xiaohaibin:XBanner:androidx_v1.0.2'
+
+    //适配
+    implementation 'me.jessyan:autosize:1.1.2'
+
+    //普通版本依赖
+//    implementation 'com.github.xiaohaibin:XBanner:1.7.9'
+//    androidX 版本使用下面的依赖
+    implementation 'com.github.xiaohaibin:XBanner:androidx_v1.1.2'
+    compile 'com.github.k0shk0sh:PermissionHelper:1.1.0'
+    implementation 'com.github.ihsg:PatternLocker:2.5.6'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    implementation  'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载
+
+    implementation 'cn.bingoogolapple:bga-swipeitemlayout:1.0.4'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+}
+repositories {
+    mavenCentral()
+}
